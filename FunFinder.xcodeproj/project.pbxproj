@@ -14,6 +14,7 @@
 		46B5529222909ACD00CC35B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B5529022909ACD00CC35B4 /* LaunchScreen.storyboard */; };
 		46B5529D22909ACD00CC35B4 /* FunFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B5529C22909ACD00CC35B4 /* FunFinderTests.swift */; };
 		46B552A822909ACD00CC35B4 /* FunFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B552A722909ACD00CC35B4 /* FunFinderUITests.swift */; };
+		46B552B62290A52700CC35B4 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B552B52290A52700CC35B4 /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		46B552A322909ACD00CC35B4 /* FunFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B552A722909ACD00CC35B4 /* FunFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFinderUITests.swift; sourceTree = "<group>"; };
 		46B552A922909ACD00CC35B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46B552B52290A52700CC35B4 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				46B5529022909ACD00CC35B4 /* LaunchScreen.storyboard */,
 				46B5529322909ACD00CC35B4 /* Info.plist */,
 				46B5528B22909ACC00CC35B4 /* FunFinder.xcdatamodeld */,
+				46B552B52290A52700CC35B4 /* AddPhotoViewController.swift */,
 			);
 			path = FunFinder;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B5528522909ACC00CC35B4 /* AppDelegate.swift in Sources */,
+				46B552B62290A52700CC35B4 /* AddPhotoViewController.swift in Sources */,
 				46B5528D22909ACC00CC35B4 /* FunFinder.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
