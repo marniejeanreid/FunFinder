@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46294E66229657010072B4D6 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46294E65229657010072B4D6 /* PhotoDetailViewController.swift */; };
 		46B5528522909ACC00CC35B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B5528422909ACC00CC35B4 /* AppDelegate.swift */; };
 		46B5528A22909ACC00CC35B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B5528822909ACC00CC35B4 /* Main.storyboard */; };
 		46B5528D22909ACC00CC35B4 /* FunFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46B5528B22909ACC00CC35B4 /* FunFinder.xcdatamodeld */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46294E65229657010072B4D6 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		46B5528122909ACC00CC35B4 /* FunFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B5528422909ACC00CC35B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46B5528922909ACC00CC35B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				46B5528B22909ACC00CC35B4 /* FunFinder.xcdatamodeld */,
 				46B552B52290A52700CC35B4 /* AddPhotoViewController.swift */,
 				46B552B72290D3CC00CC35B4 /* PhotoTableTableViewController.swift */,
+				46294E65229657010072B4D6 /* PhotoDetailViewController.swift */,
 			);
 			path = FunFinder;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				46B5528522909ACC00CC35B4 /* AppDelegate.swift in Sources */,
 				46B552B62290A52700CC35B4 /* AddPhotoViewController.swift in Sources */,
 				46B5528D22909ACC00CC35B4 /* FunFinder.xcdatamodeld in Sources */,
+				46294E66229657010072B4D6 /* PhotoDetailViewController.swift in Sources */,
 				46B552B82290D3CC00CC35B4 /* PhotoTableTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

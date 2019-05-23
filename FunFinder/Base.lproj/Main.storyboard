@@ -26,6 +26,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="QjT-DJ-64o" kind="show" identifier="moveToDetail" id="c47-al-uHQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -76,7 +79,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Emmy" translatesAutoresizingMaskIntoConstraints="NO" id="4Nk-uz-pco">
-                                <rect key="frame" x="107" y="304" width="200" height="128"/>
+                                <rect key="frame" x="107" y="304" width="200" height="128.00000000000091"/>
                                 <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="2tG-l1-Uen"/>
@@ -134,6 +137,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gN4-q3-kH4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1446.376811594203" y="128.80434782608697"/>
+        </scene>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="jR4-Do-3Xn">
+            <objects>
+                <viewController id="QjT-DJ-64o" customClass="PhotoDetailViewController" customModule="FunFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e8w-rH-9wJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RcL-GV-j7r">
+                                <rect key="frame" x="87" y="281" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8yg-YT-EXB"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoDetailView" destination="RcL-GV-j7r" id="JbT-uG-XxA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Afu-Fj-ByM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="122"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9JK-kH-JHj">
