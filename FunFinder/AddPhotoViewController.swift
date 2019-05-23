@@ -15,7 +15,8 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
     
     @IBOutlet weak var imageView: UIImageView!
     
-
+    @IBOutlet weak var captionText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
@@ -27,8 +28,24 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         //sets image Picker to photo lib, but haven't told it to go yet
         present(imagePicker, animated: true, completion: nil)
         //tells them to bring the photo lib "forward"
-        
     }
+    
+
+    @IBAction func saveTapped(_ sender: UIButton) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+            photoToSave.caption = captionText.text
+            if let userImage = imageView.image {
+                if let userImageData = userImage.pngData() {
+                    photoToSave.imageData = userImageData
+                }
+            }
+            
+        }
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        navigationController?.popViewController(animated: true)
+    }
+    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         //Code below updates photo
