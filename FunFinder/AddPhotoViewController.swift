@@ -30,7 +30,18 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         //tells them to bring the photo lib "forward"
     }
     
+    @IBAction func cameraTapped(_ sender: Any) {
+//        print("Camera button tapped.")
+        imagePicker.sourceType = .camera
 
+         present(imagePicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func albumsTapped(_ sender: Any) {
+        imagePicker.sourceType = .savedPhotosAlbum
+        
+        present(imagePicker, animated: true, completion: nil)
+    }
     @IBAction func saveTapped(_ sender: UIButton) {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
             let photoToSave = Photos(entity: Photos.entity(), insertInto: context)

@@ -62,12 +62,18 @@
                                 <state key="normal" title="Camera">
                                     <color key="titleColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cameraTapped:" destination="mGd-Ep-al3" eventType="touchUpInside" id="Nh2-rd-K80"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzx-xr-0mZ">
                                 <rect key="frame" x="321" y="90" width="52" height="30"/>
                                 <state key="normal" title="Albums">
                                     <color key="titleColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="albumsTapped:" destination="mGd-Ep-al3" eventType="touchUpInside" id="db8-Am-mQZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybY-28-vOa">
                                 <rect key="frame" x="161" y="90" width="92" height="30"/>
@@ -79,7 +85,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Emmy" translatesAutoresizingMaskIntoConstraints="NO" id="4Nk-uz-pco">
-                                <rect key="frame" x="107" y="304" width="200" height="128.00000000000091"/>
+                                <rect key="frame" x="107" y="304" width="200" height="128"/>
                                 <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="2tG-l1-Uen"/>
